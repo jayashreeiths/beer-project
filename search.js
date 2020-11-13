@@ -15,7 +15,7 @@ var values = ["&beer_name=", "&hops=", "&malt="];
 
 formElement.addEventListener('submit', evt => {
     //let userInput = (evt.target[0].value)
-    
+
 
     let tarAdd = "";
 
@@ -30,7 +30,7 @@ formElement.addEventListener('submit', evt => {
     }
     searchStr = api + tarAdd + '&per_page=10&page=' + page_num;
     //getData(url, render);
-    
+
 
 
     fetch(searchStr)
@@ -56,7 +56,7 @@ function render(data) {
         const beer = data[i];
 
         const liElement = document.createElement('li');
-        liElement.setAttribute('name', beer.name);
+        liElement.setAttribute('name', beer.id);
         liElement.textContent = beer.name;
 
         ulElement.appendChild(liElement);
@@ -69,14 +69,10 @@ function render(data) {
 
 
 function onUlClicked(evt) {
-    //removeAllChildNodes(mainElement);
-    const next = addEventListener('click', evt => {
-        ;
-        const id = evt.target.getAttribute('name');
-        const url = `info.html?name=${id}`;
-        document.location.href = url;
-        //console.log(evt)
-    })
+
+    const id = evt.target.getAttribute('name');
+    const url = `info.html?name=${id}`;
+    document.location.href = url;
 }
 
 function next(evt) {

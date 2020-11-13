@@ -1,0 +1,49 @@
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #33c9ff;
+}
+
+.search{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    padding: 5%;
+}
+
+li{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 1%;
+border-radius: 10%;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    border-radius: 100%;
+    
+    }
+
+h1{
+    display: flex; 
+    justify-content: center;
+}
+
+.knappar{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    
+}
+

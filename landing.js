@@ -71,7 +71,7 @@ document.getElementById("grabButton").addEventListener("click", grabRandomBeer);
 
 function search(evt) {
 
-    window.location = "searchpage.html";;
+    window.location = "search.html";;
 
 }
 const searchElement = document.getElementById("searchbutton");
